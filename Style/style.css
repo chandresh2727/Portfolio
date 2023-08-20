@@ -1,25 +1,26 @@
+/* @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100'; */
 /*            h1,h2,h3,h4,p{
                 font-family: 'VT323', monospace;
             }*/
 
 /* This is an Copy from css inside the Fist JSP Page */
 
-.icon-image:hover {
+/* .icon-image:hover {
     cursor: pointer;
 }
 
 imag1 {
     transform: rotate(360deg);
-}
+} */
 
-.img1:hover {
+/* .img1:hover {
     border: 2px solid whitesmoke;
     border-radius: 2px;
     /*transform: rotate(angle);*/
-    animation: rotate-btn 0.9s linear 1;
-}
+/* animation: rotate-btn 0.9s linear 1;
+} */
 
-@keyframes rotate-btn {
+/* @keyframes rotate-btn {
     0% {
         transform: rotate(0);
     }
@@ -27,7 +28,7 @@ imag1 {
     100% {
         transform: rotate(-360deg);
     }
-}
+} */
 
 /*Dark theme Otion 1*/
 
@@ -42,21 +43,21 @@ imag1 {
                             line-height: inherit;
                         }*/
 
-.darkBtn {
+/* .darkBtn {
     hight: 10000px;
     righ: 1000px;
     left: 1000px;
-}
+} */
 
-* {
-    text-transform: uppercase;
-    /*font-family: 'VT323', monospace;*/
-}
-
+/* * { */
+/* text-transform: uppercase; */
+/*font-family: 'VT323', monospace;*/
+/* } */
+/* 
 p {
-    padding: 40px;
-    /*font-family: 'VT323', monospace;*/
-}
+    padding: 40px; */
+/*font-family: 'VT323', monospace;*/
+/* }
 
 .day {
     -webkit-animation-name: today;
@@ -64,9 +65,9 @@ p {
     -webkit-animation-duration: .5s;
     animation-duration: .5s;
     background-color: #fff;
-}
+} */
 
-.night {
+/* .night {
     -webkit-animation-name: tonight;
     animation-name: tonight;
     -webkit-animation-duration: .5s;
@@ -117,36 +118,36 @@ p {
     to {
         background-color: #292728;
     }
-}
+} */
 
 /*# sourceMappingURL=style.css.map */
 
 
 
-body {
+/* body {
     margin: 150px;
-}
+} */
 
-.nameOfUser {
-    cursor: pointer;
-    /*margin-top: 20px;*/
-    margin-top: 150px;
-    /*Check this is later on*/
-    /*font-family: 'Fredericka the Great', cursive !important;*/
-}
+/* .nameOfUser { */
+/* cursor: pointer; */
+/*margin-top: 20px;*/
+/* margin-top: 150px; */
+/*Check this is later on*/
+/* font-family: 'Fredericka the Great', cursive !important; */
+/* } */
 
-.nameOfUser:hover::before {
-    content: "coder ";
-    cursor: pointer;
-    color: darkblue;
-    /*background-color: yellow;*/
-    /*background-color: lightgray*/
-}
+/* .nameOfUser:hover::before { */
+/* content: "coder "; */
+/* cursor: pointer; */
+/* color: darkblue; */
+/* background-color: yellow; */
+/*background-color: lightgray*/
+/* } */
 
-.icon {
-    /*display: flex;*/
-    font-size: 25px;
-}
+/* .icon { */
+/*display: flex;*/
+/* font-size: 25px; */
+/* } */
 
 /*.dataSet{
     background-color: yellow;
@@ -171,7 +172,7 @@ body {
 
 /*Dark theme*/
 
-:root {
+/* :root {
     --color-primary: #f1f1f1;
     --color-primary-light: #152640;
     --color-secondary: #eec413;
@@ -193,29 +194,29 @@ body {
 *:after {
     margin: 0;
     padding: 0;
-}
+} */
 
-ul,
+/* ul,
 ol {
     list-style: none;
-}
+} */
 
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
-body {
-    /*font-family: "Nunito", sans-serif;*/
-    font-family: 'VT323', monospace;
+/* body { */
+/*font-family: "Nunito", sans-serif;*/
+/* font-family: 'VT323', monospace;
     font-size: 14px;
     line-height: 1.5;
 }
 
 body {
     background: var(--color-primary);
-}
+} */
 
-.theme-toggle {
+/* .theme-toggle {
     height: 37px;
     width: 37px;
     position: fixed;
@@ -473,6 +474,324 @@ body {
 .theme--night .theme-toggle .sun__ray:nth-child(12) {
     -webkit-transform: rotate(calc(calc(12 * calc(360deg / 12)) - 45deg));
     transform: rotate(calc(calc(12 * calc(360deg / 12)) - 45deg));
+} */
+
+/*# sourceMappingURL=style.css.map */
+
+
+/* Dark .theme--night */
+
+
+
+/*            h1,h2,h3,h4,p{
+                font-family: 'VT323', monospace;
+            }*/
+/* 
+            .icon-image:hover {
+                cursor: pointer;
+            }
+    
+            imag1 {
+                transform: rotate(360deg);
+            }
+    
+            .img1:hover {
+                border: 2px solid whitesmoke;
+                border-radius: 2px;
+                /*transform: rotate(angle);*/
+/* animation: rotate-btn 0.9s linear 1;
+            }
+    
+            @keyframes rotate-btn {
+                0% {
+                    transform: rotate(0);
+                }
+    
+                100% {
+                    transform: rotate(-360deg);
+                }
+            } */
+
+/*Dark theme Otion 1*/
+
+/*            button{
+                                radius:20px;
+                            }*/
+
+/*button, input, optgroup, select, textarea {*/
+/*                margin: 20px;
+                                font-family: inherit;
+                                font-size: inherit;
+                                line-height: inherit;
+                            }*/
+
+.darkBtn {
+    height: 10px;
+    right: 10px;
+    left: 10px;
+}
+
+* {
+    text-transform: uppercase;
+    /*font-family: 'VT323', monospace;*/
+}
+
+p {
+    padding: 40px;
+    /*font-family: 'VT323', monospace;*/
+}
+
+.day {
+    -webkit-animation-name: today;
+    animation-name: today;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    background-color: #fff;
+}
+
+.night {
+    -webkit-animation-name: tonight;
+    animation-name: tonight;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    background-color: #292728;
+    color: #ccc;
+}
+
+.night body {
+    background-color: #838795;
+}
+
+@-webkit-keyframes today {
+    from {
+        background-color: #292728;
+    }
+
+    to {
+        background-color: #fff;
+    }
+}
+
+@keyframes today {
+    from {
+        background-color: #292728;
+    }
+
+    to {
+        background-color: #fff;
+    }
+}
+
+@-webkit-keyframes tonight {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #292728;
+    }
+}
+
+@keyframes tonight {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #292728;
+    }
+}
+
+*/
+/* Knowing language text */
+
+/* @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100'; */
+/* html,
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background: #212121;
+      height: 100%;
+    } */
+/* .container {
+      height: 100%;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    } */
+/* .text {
+      font-weight: 100;
+      font-size: 28px;
+      color: #fafafa;
+    }
+    .dud {
+      color: #757575;
+    } */
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+
+.nameOfUser:hover {
+    /* content: "coder "!important; */
+    cursor: pointer;
+    color: darkblue;
+    /* background-color: yellow; */
+    /*background-color: lightgray*/
+}
+
+.nameOfUser {
+    cursor: pointer;
+    /*margin-top: 20px;*/
+    /* margin-top: 150px; */
+    /*Check this is later on*/
+    /* font-family: 'Fredericka the Great', cursive !important; */
+}
+
+.text {
+    font-weight: 200px;
+    /* font-size: 28px; */
+    /* color: #fafafa; */
+}
+
+.dud {
+    color: #757575;
+}
+
+/* Dark theme */
+.icon-image:hover {
+    cursor: pointer;
+}
+
+imag1 {
+    transform: rotate(360deg);
+}
+
+.img1:hover {
+    border: 2px solid whitesmoke;
+    border-radius: 2px;
+    /*transform: rotate(angle);*/
+    animation: rotate-btn 0.9s linear 1;
+}
+
+@keyframes rotate-btn {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/*Dark theme Otion 1*/
+
+/*            button{
+                                radius:20px;
+                            }*/
+
+/*button, input, optgroup, select, textarea {*/
+/*                margin: 20px;
+                                font-family: inherit;
+                                font-size: inherit;
+                                line-height: inherit;
+                            }*/
+
+.darkBtn {
+    height: 10px;
+    right: 10px;
+    left: 10px;
+}
+
+* {
+    text-transform: uppercase;
+    /*font-family: 'VT323', monospace;*/
+}
+
+p {
+    padding: 40px;
+    /*font-family: 'VT323', monospace;*/
+}
+
+.day {
+    -webkit-animation-name: today;
+    animation-name: today;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    background-color: #fff;
+}
+
+.night {
+    -webkit-animation-name: tonight;
+    animation-name: tonight;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    background-color: #292728;
+    color: #ccc;
+}
+
+.night body {
+    background-color: #838795;
+}
+
+@-webkit-keyframes today {
+    from {
+        background-color: #252324;
+    }
+
+    to {
+        background-color: #fff;
+    }
+}
+
+@keyframes today {
+    from {
+        background-color: #292728;
+    }
+
+    to {
+        background-color: #fff;
+    }
+}
+
+@-webkit-keyframes tonight {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #292728;
+    }
+}
+
+@keyframes tonight {
+    from {
+        background-color: #fff;
+    }
+
+    to {
+        background-color: #292728;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+#icon-me {
+    font-size: 2rem;
+}
+
+.text{
+    font-size: 45px;
+}
+
+
+
+/* Tooltip fix  */
+
