@@ -62,7 +62,7 @@ class TextScramble {
         complete++;
         output += to;
       } else if (this.frame >= start) {
-        if (!char || Math.random() < 0.28) {
+        if (!char || Math.random() < 0.27) {
           char = this.randomChar();
           this.queue[i].char = char;
         }
@@ -119,5 +119,5 @@ nameOfUserElement.addEventListener('mouseenter', () => {
 
 
 nameOfUserElement.addEventListener('mouseleave', () => {
-  nameOfUserElement.textContent = 'chandresh';
+  nameOfUserElement.textContent = "Hi, I'm chandresh";
 });
