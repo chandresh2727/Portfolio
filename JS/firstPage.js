@@ -1,4 +1,3 @@
-
 // JS File
 
 var btn = document.getElementById('btn');
@@ -8,7 +7,6 @@ btn.onclick = function() {
   document.body.classList.toggle('night');
   document.body.classList.toggle('day');
 }
-
 
             var img_array = ['https://cdn-icons-png.flaticon.com/128/606/606807.png', 'https://cdn-icons-png.flaticon.com/128/869/869869.png'];
 
@@ -27,24 +25,6 @@ btn.onclick = function() {
                 document.body.classList.toggle('night');
                 document.body.classList.toggle('day');
             }
-
-
-            //            const darkMode = document.querySelector(".theme-toggle");
-            //
-            //            function darkify() {
-            //                document.documentElement.classList.toggle("theme--night");
-            //            }
-            //
-            //            darkMode.addEventListener("click", darkify);
-            //
-            //            darkify();
-
-
-            // $(function () {
-            //     $('[data-toggle="tooltip"]').tooltip()
-            // })
-
-            // Animated text code 
 
 // ——————————————————————————————————————————————————
 // TextScramble
@@ -141,10 +121,3 @@ nameOfUserElement.addEventListener('mouseenter', () => {
 nameOfUserElement.addEventListener('mouseleave', () => {
   nameOfUserElement.textContent = 'chandresh';
 });
-
-
-
-
-
-//For tooltip
-

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Navbar</title>
+    <link rel="stylesheet" href="/Style/style.css">
+    <style>
+        
+        .navbar {
+            /* background-color: #333; */
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .nav-item {
+            float: left;
+            display: flex;
+            color: white;
+            /* Set text color for the navbar links */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            background: linear-gradient(to right, #FF5733, #FFC300);
+            /* Set gradient color for text */
+            -webkit-background-clip: text;
+            /* Apply gradient only to text (webkit browsers) */
+            background-clip: text;
+            /* Apply gradient only to text (standard) */
+            -webkit-text-fill-color: transparent;
+            /* Make text transparent to show gradient */
+        }
+
+        /* #myImg{
+            top: 5px;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <button onclick="darkImg()" id="btn" class="darkBtn"
+            style="margin:10px; border-radius:10px; background:url(/img/diskbtn.png) no-repeat; border: none; cursor:pointer;"><img
+                id="myImg" src="https://cdn-icons-png.flaticon.com/128/606/606807.png" alt="btnImg" width="30px"
+                height="30px" /></button>
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Services</a>
+        <a href="#" class="nav-item">Contact</a>
+    </nav>
+
+</body>
+<script src="/JS/firstPage.js"></script>
+
+</html>
