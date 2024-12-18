@@ -1,46 +1,43 @@
-// JS File
+// Theme Toggle Button
+const btn = document.getElementById('btn');
+const body = document.body;
+const themeImages = [
+  'https://cdn-icons-png.flaticon.com/128/606/606807.png',
+  'https://cdn-icons-png.flaticon.com/128/869/869869.png'
+];
 
-var btn = document.getElementById('btn');
-document.body.classList.add('day');
+// Toggle Theme (Day/Night)
+body.classList.add('day');
+btn.addEventListener('click', () => {
+  body.classList.toggle('night');
+  body.classList.toggle('day');
+});
 
-btn.onclick = function() {
-  document.body.classList.toggle('night');
-  document.body.classList.toggle('day');
+// Image Toggle Function
+const imgElement = document.getElementById('myImg');
+imgElement.addEventListener('click', toggleImage);
+
+function toggleImage() {
+  const currentSrc = imgElement.src;
+  const nextSrc = themeImages[(themeImages.indexOf(currentSrc) + 1) % themeImages.length];
+  imgElement.src = nextSrc;
 }
 
-            var img_array = ['https://cdn-icons-png.flaticon.com/128/606/606807.png', 'https://cdn-icons-png.flaticon.com/128/869/869869.png'];
-
-            function darkImg() {
-                //                document.getElementById("myImg").src = 'https://cdn-icons-png.flaticon.com/128/869/869869.png';
-                var current = img_array.indexOf(this.src);
-                this.src = img_array[current + 1 === img_array.length ? 0 : current + 1];
-            }
-
-            document.getElementById('myImg').addEventListener('click', darkImg);
-
-            var btn = document.getElementById('btn');
-            document.body.classList.add('day');
-
-            btn.onclick = function () {
-                document.body.classList.toggle('night');
-                document.body.classList.toggle('day');
-            }
-
-// ——————————————————————————————————————————————————
-// TextScramble
-// ——————————————————————————————————————————————————
-
+// Text Scramble Effect
 class TextScramble {
   constructor(el) {
     this.el = el;
     this.chars = '!<>-_\\/[]{}—=+*^?#________';
     this.update = this.update.bind(this);
   }
+
   setText(newText) {
     const oldText = this.el.innerText;
     const length = Math.max(oldText.length, newText.length);
     const promise = new Promise(resolve => this.resolve = resolve);
     this.queue = [];
+
+    // Create queue for animation sequence
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || '';
       const to = newText[i] || '';
@@ -48,30 +45,35 @@ class TextScramble {
       const end = start + Math.floor(Math.random() * 40);
       this.queue.push({ from, to, start, end });
     }
+
     cancelAnimationFrame(this.frameRequest);
     this.frame = 0;
     this.update();
     return promise;
   }
+
   update() {
     let output = '';
     let complete = 0;
-    for (let i = 0, n = this.queue.length; i < n; i++) {
-      let { from, to, start, end, char } = this.queue[i];
+
+    // Loop through the queue to update text
+    for (let i = 0; i < this.queue.length; i++) {
+      const { from, to, start, end, char } = this.queue[i];
       if (this.frame >= end) {
         complete++;
         output += to;
       } else if (this.frame >= start) {
-        if (!char || Math.random() < 0.27) {
-          char = this.randomChar();
-          this.queue[i].char = char;
-        }
-        output += `<span class="dud">${char}</span>`;
+        const randomChar = Math.random() < 0.27 ? this.randomChar() : char;
+        this.queue[i].char = randomChar;
+        output += `<span class="dud">${randomChar}</span>`;
       } else {
         output += from;
       }
     }
+
     this.el.innerHTML = output;
+
+    // Resolve promise when all letters are complete
     if (complete === this.queue.length) {
       this.resolve();
     } else {
@@ -79,45 +81,42 @@ class TextScramble {
       this.frame++;
     }
   }
+
   randomChar() {
     return this.chars[Math.floor(Math.random() * this.chars.length)];
-  }}
+  }
+}
 
-
-// Language Experience 
-
-
+// Phrases for the Text Scramble Effect
 const phrases = [
-'Java Developer',
-'Web Developer',
-'Blockchain Developer',
-'Android Developer',
-'Full stack Developer'];
-
+  'Java Developer',
+  'Web Developer',
+  'Blockchain Developer',
+  // 'Android Developer',
+  'Full Stack Developer'
+];
 
 const el = document.querySelector('.text');
 const fx = new TextScramble(el);
-
 let counter = 0;
-const next = () => {
+
+// Rotate through phrases
+function rotatePhrases() {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 1500);
+    setTimeout(rotatePhrases, 1500);
   });
   counter = (counter + 1) % phrases.length;
-};
+}
 
-next();
+rotatePhrases();
 
-
-// This is for an Hover event 
+// Hover event for User Name
 const nameOfUserElement = document.querySelector('.nameOfUser');
 
-
 nameOfUserElement.addEventListener('mouseenter', () => {
-  nameOfUserElement.textContent = 'coder chandresh';
+  nameOfUserElement.textContent = 'Coder Chandresh';
 });
 
-
 nameOfUserElement.addEventListener('mouseleave', () => {
-  nameOfUserElement.textContent = "Hi, I'm chandresh";
+  nameOfUserElement.textContent = "Hi, I'm Chandresh";
 });

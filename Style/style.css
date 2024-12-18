@@ -1,245 +1,233 @@
-/* .darkBtn {
-    height: 10px;
-    right: 10px;
-    left: 10px;
-} */
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    padding-top: 60px; /* To avoid overlap with fixed navbar */
+}
+
+/* Default Text Styling */
+p {
+    padding: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: inherit;
+}
+
+/* Theme styles */
+.day, .night {
+    transition: background-color 0.5s, color 0.5s;
+}
 
 .day {
-    -webkit-animation-name: today;
-    animation-name: today;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
     background-color: #fff;
+    color: #333;
 }
 
 .night {
-    -webkit-animation-name: tonight;
-    animation-name: tonight;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    background-color: #292728;
-    color: #ccc;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
 }
 
-.night body {
-    background-color: #838795;
-}
-
-@-webkit-keyframes today {
-    from {
-        background-color: #292728;
-    }
-
-    to {
-        background-color: #fff;
-    }
-}
-
-@keyframes today {
-    from {
-        background-color: #292728;
-    }
-
-    to {
-        background-color: #fff;
-    }
-}
-
-@-webkit-keyframes tonight {
-    from {
-        background-color: #fff;
-    }
-
-    to {
-        background-color: #292728;
-    }
-}
-
-@keyframes tonight {
-    from {
-        background-color: #fff;
-    }
-
-    to {
-        background-color: #292728;
-    }
-}
-
+/* Navbar */
 .navbar {
-    /* background-color: #333; */
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2f36; /* Dark grayish blue for a more professional look */
+    padding: 12px 0; /* Slightly reduced padding for a cleaner design */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Lighter shadow for a soft effect */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    font-size: 16px; /* Consistent font size */
 }
 
 .nav-item {
-    float: left;
-    display: flex;
-    color: white;
-    /* Set text color for the navbar links */
+    padding: 10px 25px; /* More space between nav items */
+    font-size: 18px; /* Increased font size for readability */
+    text-transform: uppercase;
+    letter-spacing: 1.2px; /* Slightly more space between letters */
+    color: #e0e0e0;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 30px;
-    background: linear-gradient(to right, #003366, #66aaff);
-    /* Set gradient color for text */
-    -webkit-background-clip: text;
-    /* Apply gradient only to text (webkit browsers) */
-    background-clip: text;
-    /* Apply gradient only to text (standard) */
-    -webkit-text-fill-color: transparent;
-    /* Make text transparent to show gradient */
+    transition: color 0.3s ease; /* Only transition color for a smoother effect */
 }
 
-/* #myImg{
-    top: 5px;
-} */
-
-.navbar {
-    /* background-color: #333; */
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.nav-item:hover {
+    color: #76c7c0; /* Professional hover color (light teal) */
 }
 
-.nav-item {
-    float: left;
-    display: flex;
+/* Button Styling */
+button, input, optgroup, select, textarea {
+    padding: 12px 20px;
+    border: 1px solid #333;
+    background-color: #444;
     color: white;
-    /* Set text color for the navbar links */
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;
-    background: linear-gradient(to right, #003366, #66aaff);
-    /* Set gradient color for text */
-    -webkit-background-clip: text;
-    /* Apply gradient only to text (webkit browsers) */
-    background-clip: text;
-    /* Apply gradient only to text (standard) */
-    -webkit-text-fill-color: transparent;
-    /* Make text transparent to show gradient */
-}
-
-/*/////////////////////////////////////////////////////////////////////////////////*/
-
-.nameOfUser,.nameOfUser:hover {
+    font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.text {
-    font-weight: 200px;
+button:hover {
+    background-color: #666;
+    transform: scale(1.05);
 }
 
-.dud {
-    color: #757575;
+/* Icon Styling */
+.icon-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-/* Dark theme */
 .icon-image:hover {
-    cursor: pointer;
-}
-
-imag1 {
     transform: rotate(360deg);
 }
 
-/* .img1:hover {
-    border: 2px solid;
-    border-radius: 2px; */
-    /*transform: rotate(angle);*/
-    /* animation: rotate-btn 0.9s linear 1;
-} */
+/* User Info */
+.nameOfUser {
+    font-weight: bold;
+    color: #ff9800;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
 
-/* @keyframes rotate-btn {
-    0% {
-        transform: rotate(0);
+.nameOfUser:hover {
+    color: #ff5722;
+}
+
+/* Text Section */
+.text {
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Project Section */
+.project {
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.project a {
+    font-size: 1rem;
+    background-color: #76c7c0;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #5fa7a0;
+}
+
+/* Achievements Section */
+.achievements ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.achievements li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.achievements li:before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #76c7c0;
+}
+
+/* Responsive design for mobile and tablets */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
     }
 
-    100% {
-        transform: rotate(-360deg);
+    .nav-item {
+        font-size: 16px; /* Adjusted font size */
+        padding: 8px 20px; /* Adjusted padding for smaller screens */
     }
-} */
 
-/*Dark theme Otion 1*/
+    .text {
+        font-size: 1.5rem;
+    }
 
-/*            button{
-                                radius:20px;
-                            }*/
+    .icon-image {
+        font-size: 1.5rem;
+    }
 
-/*button, input, optgroup, select, textarea {*/
-/*                margin: 20px;
-                                font-family: inherit;
-                                font-size: inherit;
-                                line-height: inherit;
-                            }*/
-
-/* .darkBtn {
-    height: 10px;
-    right: 10px;
-    left: 10px; */
-    /* top:10px; */
-/* } */
-
-p {
-    padding: 40px;
-    /*font-family: 'VT323', monospace;*/
+    .project {
+        padding: 15px;
+    }
 }
 
-.day {
-    -webkit-animation-name: today;
-    animation-name: today;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    background-color: #fff;
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-item {
+        font-size: 14px; /* Adjusted font size for very small screens */
+        padding: 5px 15px; /* Adjusted padding */
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    .project {
+        padding: 10px;
+    }
 }
 
-.night {
-    -webkit-animation-name: tonight;
-    animation-name: tonight;
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    background-color: #292728;
-    color: #ccc;
-}
-
+/* Dark mode specific */
 .night body {
-    background-color: #838795;
+    background-color: #1e1e1e;
 }
 
-@-webkit-keyframes today {
-    from {
-        background-color: #252324;
-    }
-
-    to {
-        background-color: #fff;
-    }
+.night .navbar {
+    background-color: #121212;
 }
 
+.night .nav-item {
+    color: #bdbdbd;
+}
+
+/* Animation keyframes */
 @keyframes today {
     from {
-        background-color: #292728;
+        background-color: #1e1e1e;
     }
-
     to {
         background-color: #fff;
-    }
-}
-
-@-webkit-keyframes tonight {
-    from {
-        background-color: #fff;
-    }
-
-    to {
-        background-color: #292728;
     }
 }
 
@@ -247,24 +235,91 @@ p {
     from {
         background-color: #fff;
     }
-
     to {
-        background-color: #292728;
+        background-color: #1e1e1e;
     }
 }
 
-/*# sourceMappingURL=style.css.map */
+/* Utility classes for spacing */
+.mb-2 {
+    margin-bottom: 20px;
+}
+
+/* Text link styles */
+.text-center a {
+    color: #03a9f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.text-center a:hover {
+    color: #039be5;
+}
+
+/* Social Media Icons */
+.t-1.icon a {
+    font-size: 24px;
+    margin: 10px;
+    transition: color 0.3s ease;
+}
+
+.t-1.icon a:hover {
+    color: #00bcd4;
+}
+
+.li-id:hover {
+    color: #0077b5;
+}
+
+.bi-github:hover {
+    color: #333;
+}
+
+.bi-twitter:hover {
+    color: #1da1f2;
+}
+
+.bi-code:hover {
+    color: gray;
+}
 
 
+/* Blog Post Section */
+.blog-post {
+    background-color: #f9f9f9;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
 
+.blog-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
 
-#icon-me {
+.blog-content h2 {
     font-size: 2rem;
+    margin-top: 20px;
+    color: #444;
 }
 
-.text {
-    font-size: 45px;
+.blog-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
+.blog-footer {
+    font-size: 1rem;
+    color: #777;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
 
-/* Navbar  */
+.blog-footer p {
+    text-align: center;
+    color: #555;
+}
+

@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Chandresh</title>
+    <title>Chandresh: About</title>
 
     <!-- This 2 links are for codepan -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -18,8 +18,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Fredericka+the+Great&family=Koulen&family=Roboto:ital,wght@1,100&family=Source+Code+Pro:ital,wght@1,300&family=VT323&display=swap"
@@ -32,79 +30,74 @@
     <link rel="icon" href="/image/name.jpeg" type="image/jpeg">
 
     <style>
-
-        #ciao {
-            display: block;
-            width: fit-content;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 100px;
+        #about01 {
+            padding: 50px 0;
         }
 
-        #blocks {
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bio {
+            background-color: #2d2f37;
+            padding: 20px;
+            border-radius: 5px;
             width: 100%;
+            max-width: 1000px;
         }
 
-        #red {
-            animation: descend 3s forwards;
-            opacity: 0;
+        pre {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
 
-        #green {
-            animation: descend 3s .3s forwards;
-            opacity: 0;
+        .code {
+            color: #9cdcfe;
         }
 
-        #orange {
-            animation: descend 3s .5s forwards;
-            opacity: 0;
+        .output-box {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 1000px;
+            margin-top: 30px;
+            display: none; /* Hidden by default */
+            height: auto;
         }
 
-        #blue {
-            animation: descend 3s .7s forwards;
-            opacity: 0;
+        .btn-run {
+            background-color: #61dafb;
+            color: #282c34;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
         }
 
-        #yellow {
-            animation: descend 3s .9s forwards;
-            opacity: 0;
+        .btn-run:hover {
+            background-color: #4fa3f7;
         }
 
-        #light-green {
-            animation: descend 3s 1s forwards;
-            opacity: 0;
+        .output-text {
+            color: #32cd32;
+            font-family: 'Source Code Pro', monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
-
-        #ui {
-            animation: descend 3s 1.2s forwards;
-            opacity: 0;
-        }
-
-        #ux {
-            animation: descend 3s 1.4s forwards;
-            opacity: 0;
-        }
-
-        #master {
-            animation: descend 3s 1.6s forwards;
-            opacity: 0;
-        }
-
-        @keyframes descend {
-            from {
-                opacity: 0;
-                transform: translateY(-1000px)
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0)
-            }
-        }
-
-        */
     </style>
-
 
 </head>
 
@@ -120,125 +113,207 @@
         <a href="/index.html" class="nav-item">Home</a>
         <a href="/Pages/about.html" class="nav-item">About me</a>
         <a href="/Pages/project.html" class="nav-item">Projects</a>
-        <a href="/Pages/cv.html" class="nav-item">Resume</a>
+        <!-- <a href="/Pages/cv.html" class="nav-item">Resume</a> -->
         <a href="/Pages/blog.html" class="nav-item">Blog</a>
     </nav>
 
-    <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="The HTML5 Herald">
-        <meta name="author" content="SitePoint">
-
-    </head>
-
-    <body>
-        <div id="ciao">
-
-            <svg id="blocks" xmlns="http://www.w3.org/2000/svg" viewBox="0 180 400 800">
-
-
-                <g id="red">
-                    <path fill="#cc2936" d="M106.6,12H98c0-0.1,0-0.1,0-0.2V2.1C98,0.9,97.1,0,95.9,0H69.7c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2
-	H41.3c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1H13c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H2.4C1.1,12,0,13.1,0,14.4v64.5
-	c0,1.3,1.1,2.4,2.4,2.4h104.2c1.3,0,2.4-1.1,2.4-2.4V14.4C109,13.1,107.9,12,106.6,12z" transform="translate(110 710
-                       )" />
-
-                    <text x="124" y="752" font-family="Verdana" font-size="22" fill="white">Solidity</text>
-                    <text x="137" y="750" dy="24" font-family="Verdana" font-size="22" fill="white">Rust</text>
-
-
-                </g>
-
-                <g id="green">
-                    <path fill="#1e5aa8" d="M106.6,12H98c0-0.1,0-0.1,0-0.2V2.1C98,0.9,97.1,0,95.9,0H69.7c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2
-	H41.3c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1H13c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H2.4C1.1,12,0,13.1,0,14.4v64.5
-	c0,1.3,1.1,2.4,2.4,2.4h104.2c1.3,0,2.4-1.1,2.4-2.4V14.4C109,13.1,107.9,12,106.6,12z" transform="translate(110 641
-                       )" />
-
-                    <text x="135" y="683" font-family="Verdana" font-size="22" fill="white">Java </text>
-                    <text x="127" y="683" dy="24" font-family="Verdana" font-size="22" fill="white"></text>
-                </g>
-
-                <g id="orange">
-                    <path fill="#ffbc00" d="M216.6,12H209c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1h-26.2c-1.2,0-2.1,0.9-2.1,2.1v9.8
-	c0,0.1,0,0.1,0,0.2h-26.3c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1H124c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H98
-	c0-0.1,0-0.1,0-0.2V2.1C98,0.9,97.1,0,95.9,0H69.7c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H41.3c0-0.1,0-0.1,0-0.2V2.1
-	c0-1.2-0.9-2.1-2.1-2.1H13c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H3.3C1.5,12,0,13.5,0,15.4v62.5c0,1.8,1.5,3.3,3.3,3.3
-	h213.3c1.8,0,3.3-1.5,3.3-3.3V15.4C220,13.5,218.5,12,216.6,12z" transform="translate(0 571)" />
-
-                    <text x="16" y="612" font-family="Verdana" font-size="22" fill="white">Python</text>
-                    <text x="22" y="612" dy="24" font-family="Verdana" font-size="22" fill="white">javascript</text>
-
-                </g>
-
-                <g id="blue">
-                    <path fill="#1e5aa8" d="M159.3,11.8h-7.8c0-0.1,0-0.1,0-0.2V2c0-1.1-0.9-2-2-2h-25.7c-1.1,0-2,0.9-2,2v9.6c0,0.1,0,0.1,0,0.2H96.1
-	c0-0.1,0-0.1,0-0.2V2c0-1.1-0.9-2-2-2H68.4c-1.1,0-2,0.9-2,2v9.6c0,0.1,0,0.1,0,0.2h-26c0-0.1,0-0.1,0-0.2V2c0-1.1-0.9-2-2-2H12.7
-	c-1.1,0-2,0.9-2,2v9.6c0,0.1,0,0.1,0,0.2H2.8c-1.6,0-2.8,1.3-2.8,2.8v62.1c0,1.6,1.3,2.8,2.8,2.8h156.5c1.6,0,2.8-1.3,2.8-2.8V14.6
-	C162.2,13.1,160.9,11.8,159.3,11.8z" transform="translate(110 504)" />
-                    <text x="155" y="545" font-family="Verdana" font-size="22" fill="white">css3</text>
-                    <text x="150" y="545" dy="24" font-family="Verdana" font-size="22" fill="white">figma</text>
-
-                </g>
-
-                <g id="yellow">
-                    <path fill="#cc2936" d="M106.6,12H98c0-0.1,0-0.1,0-0.2V2.1C98,0.9,97.1,0,95.9,0H69.7c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2
-	H41.3c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1H13c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H2.4C1.1,12,0,13.1,0,14.4v64.5
-	c0,1.3,1.1,2.4,2.4,2.4h104.2c1.3,0,2.4-1.1,2.4-2.4V14.4C109,13.1,107.9,12,106.6,12z" transform="translate(225 434)" />
-                    <text x="247" y="475" font-family="Verdana" font-size="22" fill="white">HTML</text>
-                    <text x="255" y="475" dy="24" font-family="Verdana" font-size="22" fill="whiTe"></text>
-                </g>
-
-                <g id="light-green">
-                    <path fill="#ffbc00" d="M162.7,12h-8.1c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1h-26.2c-1.2,0-2.1,0.9-2.1,2.1v9.8
-	c0,0.1,0,0.1,0,0.2H98c0-0.1,0-0.1,0-0.2V2.1C98,0.9,97.1,0,95.9,0H69.7c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H41.3
-	c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1H13c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H2.9C1.3,12,0,13.3,0,15v63.4
-	c0,1.6,1.3,2.9,2.9,2.9h159.8c1.6,0,2.9-1.3,2.9-2.9V15C165.6,13.3,164.3,12,162.7,12z" transform="translate(58 434)" />
-                    <text x="115" y="475" font-family="Verdana" font-size="22" fill="white">SQL</text>
-                    <text x="61" y="475" dy="24" font-family="Verdana" font-size="22" fill="white">Data structure</text>
-                </g>
-
-
-                <g id="ui">
-                    <path fill="#1e5aa8" d="M159.3,11.8h-7.8c0-0.1,0-0.1,0-0.2V2c0-1.1-0.9-2-2-2h-25.7c-1.1,0-2,0.9-2,2v9.6c0,0.1,0,0.1,0,0.2H96.1
-	c0-0.1,0-0.1,0-0.2V2c0-1.1-0.9-2-2-2H68.4c-1.1,0-2,0.9-2,2v9.6c0,0.1,0,0.1,0,0.2h-26c0-0.1,0-0.1,0-0.2V2c0-1.1-0.9-2-2-2H12.7
-	c-1.1,0-2,0.9-2,2v9.6c0,0.1,0,0.1,0,0.2H2.8c-1.6,0-2.8,1.3-2.8,2.8v62.1c0,1.6,1.3,2.8,2.8,2.8h156.5c1.6,0,2.8-1.3,2.8-2.8V14.6
-	C162.2,13.1,160.9,11.8,159.3,11.8z" transform="translate(0 367
-                       )" />
-
-                    <text x="65" y="407" font-family="Verdana" font-size="22" fill="white">JSP </text>
-                    <text x="44" y="407" dy="24" font-family="Verdana" font-size="22" fill="white">Servlet </text>
-                </g>
-
-                <g id="ux">
-                    <path fill="#ffbc00" d="M162.7,12h-8.1c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1h-26.2c-1.2,0-2.1,0.9-2.1,2.1v9.8
-	c0,0.1,0,0.1,0,0.2H98c0-0.1,0-0.1,0-0.2V2.1C98,0.9,97.1,0,95.9,0H69.7c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H41.3
-	c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1H13c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H2.9C1.3,12,0,13.3,0,15v63.4
-	c0,1.6,1.3,2.9,2.9,2.9h159.8c1.6,0,2.9-1.3,2.9-2.9V15C165.6,13.3,164.3,12,162.7,12z" transform="translate(110 298)" />
-                    <text x="175" y="338" font-family="Verdana" font-size="22" fill="white">Git</text>
-                    <text x="157" y="338" dy="24" font-family="Verdana" font-size="22" fill="white">GitHub</text>
-                </g>
-
-                <g id="master">
-                    <path fill="#cc2936" d="M216.6,12H209c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1h-26.2c-1.2,0-2.1,0.9-2.1,2.1v9.8
-	c0,0.1,0,0.1,0,0.2h-26.3c0-0.1,0-0.1,0-0.2V2.1c0-1.2-0.9-2.1-2.1-2.1H124c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H98
-	c0-0.1,0-0.1,0-0.2V2.1C98,0.9,97.1,0,95.9,0H69.7c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H41.3c0-0.1,0-0.1,0-0.2V2.1
-	c0-1.2-0.9-2.1-2.1-2.1H13c-1.2,0-2.1,0.9-2.1,2.1v9.8c0,0.1,0,0.1,0,0.2H3.3C1.5,12,0,13.5,0,15.4v62.5c0,1.8,1.5,3.3,3.3,3.3
-	h213.3c1.8,0,3.3-1.5,3.3-3.3V15.4C220,13.5,218.5,12,216.6,12z" transform="translate(0 230)" />
-
-                    <text x="53" y="270" font-family="Verdana" font-size="22" fill="white">Proficient </text>
-                    <text x="52" y="270" dy="24" font-family="Verdana" font-size="22" fill="white">With</text>
-
-                </g>
-
+    <section id="about01" class="code-box">
+        <div class="container">
+            <div class="about-content">
+                <!-- OOP Java Class for "About Me" -->
+                <div class="bio">
+                    <h2 style="text-align:center;"></h2>
+                    <pre><code class="code">
+    import java.util.*;
+    import java.util.concurrent.*;
+    
+    /**
+     * Class representing the user's personal bio and its related methods.
+     */
+    public class AboutMe {
+        private String bio;
+        private ExecutorService executorService;
+    
+        public AboutMe() {
+            this.bio = "🚀 Passionate lifelong learner, always exploring emerging tech and innovative solutions.\n"
+                    + "👨‍💻 Skilled in Agile Scrum, actively collaborating in daily scrums, sprint reviews, and release planning to drive team success.\n"
+                    + "🧠 Strong problem-solver with a knack for debugging and delivering robust tech solutions.\n"
+                    + "✅ Proactive in testing and quality assurance, with experience in Test-driven Development (TDD) and using tools like JUnit for unit tests.\n"
+                    + "🌐 Extensive experience in developing RESTful APIs with Spring Boot, and proficient in Git for version control.\n"
+                    + "💻 Deep understanding of Java, OOP principles, Java 8 features, and MVC architecture, alongside hands-on expertise in Spring Framework and database integration.\n"
+                    + "🌱 Familiar with full-stack web development, including frontend technologies like HTML, CSS, and JavaScript, with a solid grasp of basic MVC and database design.";
+            this.executorService = Executors.newFixedThreadPool(3);
+        }
+    
+        public String getBio() {
+            return bio;
+        }
+    
+        public void printBio() {
+            System.out.println("Bio: " + this.bio);
+        }
+    
+        // Simulating concurrent tasks
+        public void simulateConcurrentTasks() {
+            Runnable task1 = () -> {
+                try {
+                    Thread.sleep(2000);  // Simulate a delay
+                    System.out.println("Fetching Bio...");
+                    printBio();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+            };
+    
+            executorService.submit(task1);
+        }
+    
+        public void shutDown() {
+            executorService.shutdown();
+        }
+    }
+    
+    /**
+     * Class to store and display skills and technologies.
+     */
+    class SkillsAndTechnologies {
+        private List<String> programmingLanguages;
+        private List<String> frameworks;
+        private List<String> databases;
+        private List<String> webTechnologies;
+        private List<String> blockchainTools;
+        private List<String> tools;
+        private List<String> cloudServices;
+        private List<String> ciCdTools;
+        private List<String> collaborationTools;
+        private List<String> ideTools;
+    
+        public SkillsAndTechnologies() {
+            this.programmingLanguages = Arrays.asList("Java", "Solidity", "JavaScript", "SQL", "Rust");
+            this.frameworks = Arrays.asList("Spring Boot", "Spring Mvc", "Hibernate", "Microservices", "Angular");
+            this.databases = Arrays.asList("MySQL", "PostgreSQL", "Redis");
+            this.webTechnologies = Arrays.asList("HTML5", "CSS3", "JSON", "REST", "JSP", "Servlet");
+            this.blockchainTools = Arrays.asList("Truffle", "Hardhat", "Solidity", "Ganache");
+            this.tools = Arrays.asList("Jenkins", "Git", "Maven", "Gradle", "Postman");
+            this.cloudServices = Arrays.asList("AWS", "Infura");
+            this.ciCdTools = Arrays.asList("Jenkins", "GitHub", "Bitbucket");
+            this.collaborationTools = Arrays.asList("Jira", "Microsoft Teams", "Notion", "Skype");
+            this.ideTools = Arrays.asList("VScode", "NetBeans", "Eclipse", "IntelliJ IDEA", "Workbench", "Git", "GitHub", "NPM/NPX/YARN", "Stack Overflow", "PostgreSQL", "Remix");
+        }
+    
+        public void printSkills() {
+            System.out.println("Programming Languages: " + String.join(", ", this.programmingLanguages));
+            System.out.println("Frameworks: " + String.join(", ", this.frameworks));
+            System.out.println("Databases: " + String.join(", ", this.databases));
+            System.out.println("Web Technologies: " + String.join(", ", this.webTechnologies));
+            System.out.println("Blockchain Tools: " + String.join(", ", this.blockchainTools));
+            System.out.println("Tools: " + String.join(", ", this.tools));
+            System.out.println("Cloud Services: " + String.join(", ", this.cloudServices));
+            System.out.println("CI/CD Tools: " + String.join(", ", this.ciCdTools));
+            System.out.println("Collaboration Tools: " + String.join(", ", this.collaborationTools));
+            System.out.println("IDE Tools: " + String.join(", ", this.ideTools));
+        }
+    }
+    
+    /**
+     * Class to store and display experience and roles.
+     */
+    class Experience {
+        private List<String> roles;
+        private List<String> companies;
+        private List<String> timeLine;
+    
+        public Experience() {
+            this.roles = Arrays.asList("Java Developer", "Blockchain Developer");
+            this.companies = Arrays.asList("GoDigit General Insurance", "GTPL Hathway");
+            this.timeLine = Arrays.asList("Jun 2023 - Present", "Feb 2023 - May 2023");
+        }
+    
+        public void printExperience() {
+            System.out.println("Experience:");
+            for (int i = 0; i < roles.size(); i++) {
+                System.out.println("Role: " + this.roles.get(i));
+                System.out.println("Company: " + this.companies.get(i));
+                System.out.println("Time: " + this.timeLine.get(i));
+                System.out.println();
+            }
+        }
+    }
+    
+    /**
+     * Main class to execute the application and simulate the output.
+     */
+    public class Main {
+        public static void main(String[] args) {
+            AboutMe aboutMe = new AboutMe();
+            SkillsAndTechnologies skills = new SkillsAndTechnologies();
+            Experience experience = new Experience();
+    
+            // Simulate tasks with concurrency
+            aboutMe.simulateConcurrentTasks();
+    
+            // Simulate delay to print skills and experience after bio
+            try {
+                Thread.sleep(10000);
+                skills.printSkills();
+                experience.printExperience();
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            } finally {
+                aboutMe.shutDown();
+            }
+        }
+    }
+                    </code></pre>
+                </div>
+                <!-- Button to run the code -->
+                <button class="btn-run" onclick="runCode()">Run</button>
+    
+                <!-- Output box -->
+                <div class="output-box" id="outputBox">
+                    <h3 style="color: red;">Output:</h3>
+                    <pre class="output-text" id="outputText"></pre>
+                </div>
+            </div>
         </div>
+    </section>
 
-  
+    
+    <script>
+        function runCode() {
+            // Show the output box and clear previous text
+            var outputBox = document.getElementById('outputBox');
+            var outputText = document.getElementById('outputText');
+            outputText.textContent = ""; // Clear any previous output
+            outputBox.style.display = 'block';  // Show the output box
+    
+            // Simulating the Java output with threading and concurrency
+            let output = '';
+            setTimeout(function() {
+    output += "Fetching Bio...\n";
+    output += "🚀 Passionate lifelong learner, always exploring emerging tech and innovative solutions.\n";
+    output += "👨‍💻 Skilled in Agile Scrum, actively collaborating in daily scrums, sprint reviews, and release planning to drive team success.\n";
+    output += "🧠 Strong problem-solver with a knack for debugging and delivering robust tech solutions.\n";
+    output += "✅ Proactive in testing and quality assurance, with experience in Test-driven Development (TDD) and using tools like JUnit for unit tests.\n";
+    output += "🌐 Extensive experience in developing RESTful APIs with Spring Boot, and proficient in Git for version control.\n";
+    output += "💻 Deep understanding of Java, OOP principles, Java 8 features, and MVC architecture, alongside hands-on expertise in Spring Framework and database integration.\n";
+    output += "🌱 Familiar with full-stack web development, including frontend technologies like HTML, CSS, and JavaScript, with a solid grasp of basic MVC and database design.\n";
+    outputText.textContent = output;
+}, 2000);
 
-</body>
-
-<script src="/JS/firstPage.js"></script>
-
+            setTimeout(function() {
+                output += "\nFetching Skills & Technologies...\nProgramming Languages: Java, Solidity, JavaScript, SQL, Rust\nFrameworks: Spring Boot, Spring Mvc, Hibernate, Microservices, Angular\nDatabases: MySQL, PostgreSQL, Redis\nWeb Technologies: HTML5, CSS3, JSON, REST, JSP, Servlet\nBlockchain: Truffle, Hardhat, Solidity, Ganache\nTools: Jenkins, Git, Maven, Gradle, Postman\nCloud: AWS, Infura\nCI/CD & SCM: Jenkins, GitHub, Bitbucket\nCollaboration & Project Management Tools: Jira, Microsoft Teams, Notion, Skype\nIDE: VScode, NetBeans, Eclipse, IntelliJ IDEA, Workbench, Git, GitHub, NPM/NPX/YARN, Stack Overflow, PostgreSQL, Remix\n";
+                outputText.textContent = output;
+            }, 4000);
+    
+            setTimeout(function() {
+                output += "\nFetching Experience...\nRole: Java Developer\nCompany: GoDigit general insurance.\nTime: Jun 2023 - Present\n\nRole: Blockchain Developer\nCompany:  GTPL Hathway.\nTime: Feb 2023 - May 2023\n";
+                outputText.textContent = output;
+            }, 5000);
+        }
+    </script>
+    
+<script src="/JS/firstPage.js" type="text/javascript"></script>
+    
+ </body>
 </html>
